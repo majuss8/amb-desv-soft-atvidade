@@ -5,9 +5,9 @@ function calcularSalarioFuncionario(horasTrabalhadas, valorHora, cargo) {
     const bonusFuncionario = 200;
 
     let salarioComBonus;
-    if (cargo === 'gerente') {
+    if (cargo === "gerente") {
         salarioComBonus = salarioBase + bonusGerente;
-    } else if (cargo === 'supervisor') {
+    } else if (cargo === "supervisor") {
         salarioComBonus = salarioBase + bonusSupervisor;
     } else {
         salarioComBonus = salarioBase + bonusFuncionario;
@@ -29,5 +29,5 @@ function calcularSalarioFuncionario(horasTrabalhadas, valorHora, cargo) {
     return salarioFinal;
 }
 
-const salario = calcularSalarioFuncionario(160, 25, 'gerente');
+const salario = calcularSalarioFuncionario(160, 25, "gerente");
 console.log(`O salário final é: ${salario}`);
